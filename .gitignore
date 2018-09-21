@@ -1,0 +1,10 @@
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Covers MacOS
+*.DS_Store
+.AppleDouble
+.LSOverride
