@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pizzeria Casa Nostra</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/jpg" href="static/assets/favicon.jpg">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Playfair+Display:700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="menu">
+  
+  <!--Navigation-->
+  <div class="nav" id="myNav">
+    <div class="nav-title">
+      <a href="index.html" class="logo">
+        <img src="static/assets/logo_simplified.svg" alt="" />
+        <img src="static/assets/logo_square.svg" alt="" />
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-close"></i>
+        <p>Menu</p>
+        <p>Close</p>
+      </a>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="menu.html" class="active"><li>Menu</li></a>
+        <a href="ourstory.html"><li>Our Story</li></a>
+        <a href="locationhours.html"><li>Location & Hours</li></a>
+        <a href="orderonline.html"><li>Order online</li></a>
+      </ul>
+    </div>
+  </div>
+
+  <!--Hero section-->
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <h1>Eat it here or take it to-go</h1>
+      </div>
+      <div class="row">
+        <div class="columns four offset-by-two">
+          <a class="button button-secondary" href="#">Download menu</a>
+        </div>
+        <div class="columns four">
+          <a class="button button-primary" href="#">Order online</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Main page content-->
+  <div class="container main-content">
+    <!--Logo at the top of the menu-->
+    <div class="row" id = "target">
+      <img src="static/assets/logo_simplified.svg" alt="" class="name"/>
+      <img src="static/assets/logo_horizontal.svg" alt="" class="name"/>
+      <div class="columns twelve jumplinks">
+        <ul>
+          <li>Jump to:</li>
+          <a href="#Antipasti"><li>Antipasti</li></a>
+          <a href="#Insalate"><li>Insalate</li></a>
+          <a href="#Gourmet Pizzas"><li>Gourmet Pizzas</li></a>
+          <a href="#White Pizzas"><li>White Pizzas</li></a>
+          <a href="#Pasta"><li>Pasta</li></a>
+          <a href="#Desserts"><li>Desserts</li></a>
+        </ul>
+      </div>
+    </div>
+    <!--Menu being added in here via javascript-->
+  </div>
+  
+  <!--Universal Footer-->
+  <footer>
+    <p>Follow us on social media</p>
+    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+    <p>© Pizzeria Casa Nostra. All rights reserved.</p>
+  </footer>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "nav") {
+          x.className += " open";
+      } else {
+          x.className = "nav";
+      }
+  }
+  </script>
+
+  <script src="menu.js"></script>
+
+  <!--Script for making menu-->
+  <script>
+    function menuItem(item) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "columns four");
+      var name = document.createElement("h4");
+      name.setAttribute("class", "xs-three-fourths two-thirds column");
+      name.innerHTML = item["name"];
+      div.appendChild(name);
+      var price_1 = document.createElement("h4");
+      price_1.setAttribute("class", "xs-one-fourth one-third column");
+      price_1.innerHTML = item["price_1"];
+      div.appendChild(price_1);
+      var price_2 = document.createElement("span");
+      price_2.setAttribute("class", "cents");
+      price_2.innerHTML = item["price_2"];
+      price_1.appendChild(price_2);
+      var description = document.createElement("p");
+      description.innerHTML = item["description"];
+      div.appendChild(description);
+      return div
+    }
+    function makeButton(name) {
+      var button = document.createElement("button");
+      button.setAttribute("class", "expansion");
+      var image_1 = document.createElement("img");
+      image_1.setAttribute("src", "static/assets/plus.svg");
+      image_1.setAttribute("class", "plus");
+      var image_2 = document.createElement("img");
+      image_2.setAttribute("src", "static/assets/minus.svg");
+      image_2.setAttribute("class", "minus");
+      var image_3 = document.createElement("img");
+      image_3.setAttribute("src", "static/assets/flame.svg");
+      image_3.setAttribute("class", "flame");
+      var title_p = document.createElement("p");
+      title_p.innerHTML = name;
+      button.appendChild(image_1);
+      button.appendChild(image_2);
+      button.appendChild(title_p);
+      button.appendChild(image_3);
+      return button
+    }
+
+    function makeRow(){
+      var row_box = document.createElement("div");
+      row_box.setAttribute("class", "row");
+      return row_box
+    }
+    function makeMenuCategory(category) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "row accordion");
+      var h2 = document.createElement("h2");
+      h2.innerHTML = category["name"];
+      var name = category["name"];
+      h2.setAttribute("id", name);
+      var button = makeButton(category["name"]);
+      div.appendChild(h2);
+      div.appendChild(button);
+      var items_box = document.createElement("div");
+      items_box.setAttribute("class", "panel");
+      var description_p = document.createElement("p");
+      description_p.setAttribute("class", "note");
+      if (category['description']!==null){
+        description_p.innerHTML = category['description']
+      } ;
+
+      items_box.appendChild(description_p);
+      var row_box = makeRow();
+      for (i = 0; i < category["items"].length; i++) {
+        row_box.appendChild(menuItem(category["items"][i]))
+        if (i%3===2){
+          items_box.appendChild(row_box);
+          row_box = makeRow()
+        }
+        
+        if ((i===category['items'].length-1) & (i%3!==2)){
+          items_box.appendChild(row_box);
+        }
+      }
+
+      div.appendChild(items_box);
+      return div
+    }
+
+      window.onload = function(){
+
+      t = document.getElementById("target");
+      menu = menu.reverse()
+      for (i=0;i<menu.length;i++){
+        t.after(makeMenuCategory(menu[i]));
+      }
+        var acc = document.getElementsByClassName("expansion");
+    var panel = document.getElementsByClassName("panel");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("open");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+
+          if (panel.style.height === "auto") {
+              panel.style.height = "0";
+          } else {
+              panel.classList.toggle("selected");
+          }
+      });
+  }
+
+
+    }
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

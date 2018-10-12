@@ -1,0 +1,136 @@
+/* Menu hero section */
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.menu button {
+    border-radius: 0;
+    border: none;
+    border-bottom: 5px solid black;
+    cursor: pointer;
+    padding: 10px 16px 0;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    font-family: 'Playfair Display';
+    font-size: 2.8rem;
+    color: #333;
+    height: 80px;
+}
+.menu .row button p {
+	clear: none;
+	margin: 12px 0 0 0;
+	font-size: 3rem;
+}
+.accordion .flame {
+	height: 56px;
+	width: auto;
+	display: block;
+	right: 0;
+	margin: -38px 8px 0 auto;
+}
+.accordion-mobile-only h2 {
+	display: none;
+}
+.accordion-mobile-only .panel {
+	display: none;
+}
+.accordion-mobile-only .selected {
+	display: block;
+}
+.menu button:hover,
+.menu button:focus {
+	border-color: #333;
+}
+.menu .row h4:first-of-type {
+	font-weight: 600;
+}
+.menu .row h4:last-of-type {
+	text-align: right;
+}
+.menu .row p {
+	clear: both;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion .minus {
+	margin: 18px auto auto -24px;
+	padding: 10px 16px 0 0;
+	float: left;
+	opacity: 0;
+}
+.accordion .plus {
+	padding-top: 18px;
+	float: left;
+	opacity: 1;
+}
+.open .minus {
+	opacity: 1;
+}
+.open .plus {
+	opacity: 0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: white;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 0 20px;
+}
+.panel .note {
+	text-align: center;
+	margin-top: 24px;
+}
+.selected {
+	height: 100%;
+	opacity: 1;
+}
+.panel, .selected, .fa {
+	transition: .3s ease-in-out;
+}
+
+@media (min-width: 640px) {
+	.menu .row .name:first-of-type {
+		margin: 32px auto 16px auto;
+	}
+}
+
+
+@media (min-width: 875px) {
+	.accordion-mobile-only .panel {
+		display: block;
+		height: auto;
+		opacity: 1;
+	}
+	.accordion-mobile-only button {
+		display: none;
+	}
+	.accordion-mobile-only h2 {
+		display: block;
+		font-family: 'Playfair Display';
+		font-size: 3.6rem;
+		text-align: center;
+	}
+	.menu .row .name:first-of-type {
+		display: none;
+	}
+	.menu .row .name:last-of-type {
+		display: block;
+		margin: 64px auto 40px;
+	}
+	.panel .note {
+		margin-top: 0;
+	}
+	.menu .jumplinks {
+		display: block;
+	}
+	.menu .jumplinks ul {
+		text-align: center;
+		font-size: 2rem;
+	}
+	.menu .jumplinks li {
+		display: inline;
+		margin: 0 8px;
+	}
+}

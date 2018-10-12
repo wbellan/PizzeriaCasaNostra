@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pizzeria Casa Nostra</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/jpg" href="static/assets/favicon.jpg">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Playfair+Display:700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="locationhours">
+
+  <!--Navigation-->
+  <div class="nav" id="myNav">
+    <div class="nav-title">
+      <a href="index.html" class="logo">
+        <img src="static/assets/logo_simplified.svg" alt="" />
+        <img src="static/assets/logo_square.svg" alt="" />
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-close"></i>
+        <p>Menu</p>
+        <p>Close</p>
+      </a>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="menu.html"><li>Menu</li></a>
+        <a href="ourstory.html"><li>Our Story</li></a>
+        <a href="locationhours.html" class="active"><li>Location & Hours</li></a>
+        <a href="orderonline.html"><li>Order online</li></a>
+      </ul>
+    </div>
+  </div>
+
+  <!--Hero section-->
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <h1>Come visit us and take a load off</h1>
+      </div>
+      <div class="row">
+        <div class="columns four offset-by-two">
+          <a class="button button-secondary" href="menu.html">Call us</a>
+        </div>
+        <div class="columns four">
+          <a class="button button-primary" href="#">Order online</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content">
+    <div class="row">
+      <h1>Location & Hours</h1>
+      <div class="columns four">
+        <h3>Hours</h3>
+        <h5>Sun-Thu <b>5pm - 10pm</b></h5>
+        <h3>Contact</h3>
+        <h5>(512) 555-1234<br><a href="mailto:hello@pizzeriacasanostra.com">hello@pizzeriacasanostra.com</a></h5>
+        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="columns seven offset-by-one">
+        <h3>Location</h3>
+        <h5>1234 Address of Location<br>Spicewood, TX 78700</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.930367155194!2d-98.06776268522421!3d30.352928810889274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b3ebe882357b1%3A0x2942612885bbec0d!2s21209+TX-71%2C+Spicewood%2C+TX+78669!5e0!3m2!1sen!2sus!4v1536801120157" width="100%" height="400" frameborder="0" style="border:0;margin-top:24px" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+<!--Universal Footer-->
+  <footer>
+    <p>Follow us on social media</p>
+    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+    <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+    <p>© Pizzeria Casa Nostra. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "nav") {
+            x.className += " open";
+        } else {
+            x.className = "nav";
+        }
+    }
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
