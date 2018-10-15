@@ -63,10 +63,10 @@
         <h1>Eat it here or take it to-go</h1>
       </div>
       <div class="row">
-        <div class="columns four offset-by-two">
+        <div class="columns five-md offset-by-one-md four-lg offset-by-two-lg">
           <a class="button button-secondary" href="#">Download menu</a>
         </div>
-        <div class="columns four">
+        <div class="columns five-md four-lg">
           <a class="button button-primary" href="#">Order online</a>
         </div>
       </div>
@@ -123,13 +123,13 @@
   <script>
     function menuItem(item) {
       var div = document.createElement("div");
-      div.setAttribute("class", "columns four");
+      div.setAttribute("class", "columns four-md");
       var name = document.createElement("h4");
-      name.setAttribute("class", "xs-three-fourths two-thirds column");
+      name.setAttribute("class", "xs-three-fourths two-thirds-md column");
       name.innerHTML = item["name"];
       div.appendChild(name);
       var price_1 = document.createElement("h4");
-      price_1.setAttribute("class", "xs-one-fourth one-third column");
+      price_1.setAttribute("class", "xs-one-fourth one-third-md column");
       price_1.innerHTML = item["price_1"];
       div.appendChild(price_1);
       var price_2 = document.createElement("span");
