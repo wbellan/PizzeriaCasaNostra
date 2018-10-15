@@ -818,6 +818,12 @@ NOTE: Height and opacity change used to create open/close transition
 .menu .row p {
 	clear: both;
 }
+.menu .disclaimer {
+  padding: 40px 16px 0;
+}
+.menu .disclaimer p {
+  font-size: 1.6rem;
+}
 .cents {
   font-size: 1.4rem;
   position: relative;
@@ -827,6 +833,11 @@ NOTE: Height and opacity change used to create open/close transition
 .note {
 	font-size: 1.8rem;
 	text-align: center;
+}
+@media (min-width: 640px) {
+  .menu .disclaimer {
+    padding: 40px 24px 0;
+  }
 }
 @media (min-width: 875px) {
 	.menu .jumplinks {
@@ -840,6 +851,9 @@ NOTE: Height and opacity change used to create open/close transition
 		display: inline;
 		margin: 0 8px;
 	}
+  .menu .disclaimer {
+    padding: 40px 0 0;
+  }
 }
 
 /* Accordion buttons for the Menu
@@ -856,7 +870,7 @@ NOTE: Height and opacity change used to create open/close transition
     font-family: 'Playfair Display';
     font-size: 2.8rem;
     color: #333;
-    height: 80px;
+    height: auto;
 }
 .accordion button .flame {
 	height: 56px;
@@ -866,13 +880,15 @@ NOTE: Height and opacity change used to create open/close transition
 	margin: -38px 8px 0 auto;
 }
 .accordion button .minus {
-	margin: 18px auto auto -24px;
+	width: auto;
+  margin: 18px auto auto -24px;
 	padding: 10px 16px 0 0;
 	float: left;
 	opacity: 0;
 }
 .accordion button .plus {
-	padding-top: 18px;
+	width: auto;
+  padding-top: 18px;
 	float: left;
 	opacity: 1;
 }
@@ -884,8 +900,9 @@ NOTE: Height and opacity change used to create open/close transition
 }
 .menu .accordion button p {
 	clear: none;
-	margin: 12px 0 0 0;
+	margin: 12px 72px 0 40px;
 	font-size: 3rem;
+  white-space: pre-wrap;
 }
 .accordion h2 {
 	display: none;
