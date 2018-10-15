@@ -4,7 +4,7 @@ var menu = [
   "description": null, 
   "items":[
     {
-      "name": "Tagliere", 
+      "name": "Tagliere <br>(Chopping Board)", 
       "description": "Selection of Italian cheeses and cured meats served with focaccia", 
       "price_1": "15",
       "price_2": "00"
@@ -46,7 +46,7 @@ var menu = [
   "description": null, 
   "items":[
     {
-      "name": "Insalata di Vegetali", 
+      "name": "Insalata di Vegetali <br>(Mixed vegetable salad)", 
       "description": "Romaine lettuce, baby spinach, escarole, julienne carrots, cherry tomatoes, fennel, celery, baby arugula, red onion, sweet bell pepper, vinaigrette", 
       "price_1": "7",
       "price_2": "50"
@@ -58,13 +58,13 @@ var menu = [
       "price_2" : "95"
     }, 
     {
-      "name": "Insalata Fagioli e Tonno<br>(Cannellini bean salad with tuna)", 
+      "name": "Insalata Fagioli e Tonno <br>(Cannellini bean salad with tuna)", 
       "description": "Cannellini beans, tuna, red onion, celery, parsley, extra virgin olive oil", 
       "price_1" : "7", 
       "price_2" : "95"
     }, 
     {
-      "name": "Insalata di Fagiolini<br>(Green bean salad)", 
+      "name": "Insalata di Fagiolini <br>(Green bean salad)", 
       "description": "Green beans, cherry tomatoes, potatoes, red onion, vinaigrette", 
       "price_1" : "7", 
       "price_2" : "95"
@@ -83,7 +83,7 @@ var menu = [
     },
     {
       "name": "Zuppa", 
-      "description": "Minestrone soup<br>Need to figure out how to do cup/bowl pricing 4.50/7.95", 
+      "description": "Minestrone soup<br>(Note: Need to figure out how to do cup/bowl pricing 4.50/7.95)", 
       "price_1" : "7", 
       "price_2" : "00"
     }
@@ -91,7 +91,7 @@ var menu = [
   },
   {
   "name": "Gourmet Pizzas", 
-  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campagna in Italy.<br>Any of our pizzas can be made as a calzone in the oven.<br>Gluten Free Pizza Dough extra $3.00", 
+  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campagna in Italy.<br>Any of our pizzas can be made as a calzone in the oven.<br>Gluten Free Pizza Dough* available for an extra $3.00", 
   "items":[
     {
       "name": "Casa Nostra", 
@@ -181,7 +181,7 @@ var menu = [
   },
   {
   "name": "White Pizzas", 
-  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven.<br>Gluten Free Pizza Dough extra $3.00", 
+  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven.<br>Gluten Free Pizza Dough* available for an extra $3.00", 
   "items":[
     {
       "name": "Bianca Neve", 
@@ -214,22 +214,28 @@ var menu = [
   "description": "Choose from the bases options below and add on toppings", 
   "items":[
     {
-      "name": "Bread", 
-      "description": "Foccacia<br>Classic pizza dough<br>Gluten free pizza dough", 
-      "price_1": null,
-      "price_2": null
+      "name": "Focaccia Bread", 
+      "description": null, 
+      "price_1": "8",
+      "price_2": "50"
     }, 
     {
-      "name": "Sauce", 
-      "description": "Marinara (tomato sauce)<br>Alfredo<br>Pesto", 
-      "price_1" : null, 
-      "price_2" : null
+      "name": "Marinara (tomato sauce)", 
+      "description": null, 
+      "price_1" : "10", 
+      "price_2" : "00"
     }, 
     {
-      "name": "Base Cheese", 
-      "description": "Biancaneve (mozzarella cheese)", 
-      "price_1" : null, 
-      "price_2" : null
+      "name": "Biancaneve (mozzarella cheese)", 
+      "description": null, 
+      "price_1" : "10", 
+      "price_2" : "00"
+    }, 
+    {
+      "name": "Alfredo", 
+      "description": null, 
+      "price_1" : "11", 
+      "price_2" : "50"
     }
     ]
   },
@@ -281,13 +287,13 @@ var menu = [
     },
     {
       "name": "Frutti di Mare", 
-      "description": "Seafood (*NOTE: should specify what seafood), white wine, cherry tomatoes", 
+      "description": "Seafood (*NOTE: should specify what seafood?), white wine, cherry tomatoes", 
       "price_1": "14",
       "price_2": "95"
     }, 
     {
       "name": "Lasagna Bolognese", 
-      "description": "Ragu Bolognese, parmesano", 
+      "description": "Ragu Bolognese, bechamele, parmesano", 
       "price_1" : "13", 
       "price_2" : "95"
     }, 
@@ -311,7 +317,7 @@ var menu = [
     }, 
     {
       "name": "Alfredo", 
-      "description": "Heavy cream, butter, parmesano", 
+      "description": "Heavy cream, butter, parmesano<br>Add chicken $3.50", 
       "price_1" : "12", 
       "price_2" : "00"
     },
@@ -321,6 +327,12 @@ var menu = [
       "price_1" : "11", 
       "price_2" : "00"
     },
+    {
+      "name": "Eggplant Parmigiano", 
+      "description": "Marinara, fried eggplant, hard boiled egg, ham, mozzarella and parmesano", 
+      "price_1" : "13", 
+      "price_2" : "00"
+    }
     ]
   },
   {
@@ -367,7 +379,7 @@ var menu = [
   },
   {
   "name": "Kid's Menu", 
-  "description": "You can choose between spaghetti or penne", 
+  "description": "(You can choose between spaghetti o penne)", 
   "items":[
     {
       "name": "Marinara", 
@@ -382,11 +394,23 @@ var menu = [
       "price_2": "00"
     },
     {
-      "name": "Chicken Nuggets and Fries", 
+      "name": "Chicken Nuggests and Fries", 
       "description": null, 
       "price_1": "7",
       "price_2": "00"
     },
     ]
   },
+  {
+  "name": null,
+  "description": "*Although our gluten-free dough and menu items are made and cooked using dedicated kitchen utensils and trays, they are prepared in the same facility and ovens as our regular, flour-crust pizzas. We cannot guarantee that our pizzas and other menu items are 100% free of gluten as there is always a possibility of trace amounts crossing over from other kitchen areas. If you have Celiac and/or are highly sensitive, please advise the person taking your order and know that we will do our best, but cannot guarantee your order will not touch gluten somewhere in the process. Please consider this when ordering from our menu.",
+  "items": [
+    {
+      "name": null, 
+      "description": null, 
+      "price_1": null,
+      "price_2": null
+    },
+  ]
+  }
 ]
