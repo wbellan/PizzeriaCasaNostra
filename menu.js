@@ -5,37 +5,37 @@ var menu = [
   "items":[
     {
       "name": "Tagliere <br>(Chopping Board)", 
-      "description": "Selection of Italian cheeses and cured meats served with focaccia", 
+      "description": "Selection of Italian cheeses and cured meats served with our focaccia", 
       "price_1": "15",
       "price_2": "00"
     }, 
     {
       "name": "Prosciutto & Mozzarella", 
-      "description": "Prosciutto of Parma & Mozzarella of Bufala served with a side of baby arugula and our focaccia", 
+      "description": "Prosciutto di Parma & Mozzarella served with a side of baby arugula and our focaccia <br>(Mozzarella di Bufala add $3.00)", 
       "price_1" : "12", 
       "price_2" : "95"
     }, 
     {
       "name": "Carpaccio", 
-      "description": "Beef carpaccio, flakes of parmesan, baby argula, capers, homemade citronette sauce", 
+      "description": "Beef carpaccio, flakes of parmesan, baby arugula, capers, homemade citronette sauce", 
       "price_1" : "10", 
       "price_2" : "00"
     }, 
     {
       "name": "Caponata", 
-      "description": "Eggplant, crushed tomato, celery, onion, Kalamta olives, capers, pine nuts, cooked in sweet and sour", 
+      "description": "Eggplant, sweet pepper, crushed tomato, celery, onion, green olives, capers, pine nuts, raisins, cooked in sweet and sour", 
       "price_1" : "8", 
       "price_2" : "75"
     }, 
     {
       "name": "Patate Fritte al Tartufo", 
-      "description": "Truffle french fries, grated parmesano", 
-      "price_1" : "9", 
+      "description": "French fries, truffle salt, grated parmigiano", 
+      "price_1" : "9",
       "price_2" : "00"
     }, 
     {
       "name": "Foccacia Bread", 
-      "description": "Pizza bread, coarse sea salt, garlic, olive oil, rosemary, parmesano", 
+      "description": "Pizza bread, coarse sea salt, garlic, olive oil, rosemary, parmigiano", 
       "price_1" : "4", 
       "price_2" : "50"
     }
@@ -71,13 +71,13 @@ var menu = [
     }, 
     {
       "name": "Caprese", 
-      "description": "Mozzarella di bufala, tomatoes, basil, olive oil", 
+      "description": "Mozzarella, tomatoes, basil, olive oil <br>(Mozzarella di Bufala add $3.00)", 
       "price_1" : "8", 
       "price_2" : "95"
     },
     {
       "name": "Arugula & Roasted Fennel", 
-      "description": "Lemon, extra virgin olive oil, parmesano", 
+      "description": "Arugula, roasted fennel, flakes of parmigiano, lemon, extra virgin olive oil", 
       "price_1" : "9", 
       "price_2" : "50"
     },
@@ -90,12 +90,12 @@ var menu = [
     ]
   },
   {
-  "name": "Gourmet Pizzas", 
-  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campagna in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough* available for an extra $3.00", 
+  "name": "Red Pizzas", 
+  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campania in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough* available for an extra $3.00", 
   "items":[
     {
       "name": "Casa Nostra", 
-      "description": "Tomato sauce, mozzarella, prosciutto, cherry tomatoes, baby arugula, parmesano, lemon drizzle", 
+      "description": "Tomato sauce, mozzarella, prosciutto, cherry tomatoes, baby arugula, parmigiano, lemon drizzle", 
       "price_1": "14",
       "price_2": "00"
     }, 
@@ -113,7 +113,7 @@ var menu = [
     }, 
     {
       "name": "Pesto", 
-      "description": "Tomato sauce, mozzarella, pesto, cherry tomatoes, parmesano", 
+      "description": "Tomato sauce, mozzarella, pesto, cherry tomatoes, parmigiano", 
       "price_1" : "11", 
       "price_2" : "00"
     }, 
@@ -167,13 +167,13 @@ var menu = [
     }, 
     {
       "name": "Red Garlic", 
-      "description": "Tomato sauce, mozzarella, Kalamata olives, basil, grated garlic, cherry tomatoes, olive oil", 
+      "description": "Tomato sauce, mozzarella <br>(Uncooked: Kalamata olives, basil, grated garlic, cherry tomatoes, extra virgin olive oil)", 
       "price_1" : "13", 
       "price_2" : "00"
     },
     {
       "name": "Lemon", 
-      "description": "Tomato sauce, mozzarella, ham, Robiola cheese (soft cheese), mushrooms, grated lemon zest", 
+      "description": "Tomato sauce, mozzarella, ham, cream cheese, mushrooms, grated lemon zest", 
       "price_1" : "13", 
       "price_2" : "50"
     }
@@ -184,14 +184,14 @@ var menu = [
   "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough* available for an extra $3.00", 
   "items":[
     {
-      "name": "Bianca Neve", 
-      "description": "Mozzarella cheese", 
+      "name": "Biancaneve", 
+      "description": "Mozzarella", 
       "price_1": "10",
       "price_2": "00"
     },
     {
       "name": "4 Formaggi", 
-      "description": "Mozzarella, gorgonzola, swiss cheese, parmesano, black pepper", 
+      "description": "Mozzarella, gorgonzola, swiss cheese, parmigiano, black pepper", 
       "price_1": "13",
       "price_2": "00"
     }, 
@@ -203,7 +203,7 @@ var menu = [
     }, 
     {
       "name": "Carbonara", 
-      "description": "Mozzarella, bacon, scrambled egg, parmesano, parsley, black pepper", 
+      "description": "Mozzarella, bacon, scrambled egg, parmigiano, parsley, black pepper", 
       "price_1" : "12", 
       "price_2" : "50"
     }
@@ -214,7 +214,7 @@ var menu = [
   "description": "Choose from the bases options below and add on toppings", 
   "items":[
     {
-      "name": "Focaccia Bread", 
+      "name": "Pizza Bread", 
       "description": null, 
       "price_1": "8",
       "price_2": "50"
@@ -251,13 +251,13 @@ var menu = [
     }, 
     {
       "name": "Add $2.50", 
-      "description": "Baby Arugula<br>Anchovies<br>Ham<br>Eggplant<br>Italian Sausage<br>Fresh Mozzarella<br>Pepperoni<br>Ricotta Cheese<br>Bacon<br>Alfredo Sauce<br>Gorgonzola<br>Swiss Cheese<br>Ribiola Cheese (soft cheese)<br>Parmagiano-Reggiano<br>Roasted Fennel<br>Fresh Pineapple", 
+      "description": "Baby Arugula<br>Anchovies<br>Ham<br>Eggplant<br>Italian Sausage<br>Fresh Mozzarella<br>Pepperoni<br>Ricotta Cheese<br>Bacon<br>Alfredo Sauce<br>Gorgonzola<br>Swiss Cheese<br>Cream Cheese<br>Parmagiano-Reggiano<br>Roasted Fennel<br>Fresh Pineapple", 
       "price_1" : null, 
       "price_2" : null
     }, 
     {
       "name": "Add $4.00", 
-      "description": "Prosciutto de Parma<br>Spicy Sopressata<br>Chicken<br>Mozzarella di Bufala", 
+      "description": "Prosciutto di Parma<br>Spicy Sopressata<br>Chicken<br>Mozzarella di Bufala", 
       "price_1" : null, 
       "price_2" : null
     }
@@ -281,31 +281,31 @@ var menu = [
     }, 
     {
       "name": "Amatriciana", 
-      "description": "Tomato sauce, onion, pancetta, parmesano", 
+      "description": "Tomato sauce, onion, pancetta, parmigiano", 
       "price_1" : "12", 
       "price_2" : "50"
     },
     {
-      "name": "Frutti di Mare", 
-      "description": "Seafood (*NOTE: should specify what seafood?), white wine, cherry tomatoes", 
+      "name": "Vongole", 
+      "description": "Clams, white wine, oregano, parsley", 
       "price_1": "14",
       "price_2": "95"
     }, 
     {
       "name": "Lasagna Bolognese", 
-      "description": "Ragu Bolognese, bechamele, parmesano", 
+      "description": "Ragu Bolognese, bechamele, parmigiano", 
       "price_1" : "13", 
       "price_2" : "95"
     }, 
     {
       "name": "Quattro Formaggi", 
-      "description": "Parmesano, swiss cheese, gorgonzola (blue cheese), taleggio, white pepper", 
+      "description": "parmigiano, swiss cheese, gorgonzola (blue cheese), taleggio, white pepper", 
       "price_1" : "13", 
       "price_2" : "00"
     },
     {
       "name": "Carbonara", 
-      "description": "Pancetta, whole egg, parmesano, black pepper, parsley", 
+      "description": "Pancetta, whole egg, parmigiano, black pepper, parsley", 
       "price_1": "13",
       "price_2": "00"
     }, 
@@ -317,7 +317,7 @@ var menu = [
     }, 
     {
       "name": "Alfredo", 
-      "description": "Heavy cream, butter, parmesano<br>Add chicken $3.50", 
+      "description": "Heavy cream, butter, parmigiano<br>Add chicken $3.50", 
       "price_1" : "12", 
       "price_2" : "00"
     },
@@ -328,8 +328,14 @@ var menu = [
       "price_2" : "00"
     },
     {
-      "name": "Eggplant Parmigiano", 
-      "description": "Marinara, fried eggplant, hard boiled egg, ham, mozzarella and parmesano", 
+      "name": "Parmigiana", 
+      "description": "Fried eggplant, tomato sauce, hard boiled egg, ham, mozzarella and parmigiano", 
+      "price_1" : "13", 
+      "price_2" : "00"
+    },
+    {
+      "name": "Tonno al Limone", 
+      "description": "Tuna in olive oil, lemon", 
       "price_1" : "13", 
       "price_2" : "00"
     }
@@ -353,24 +359,24 @@ var menu = [
     },
     {
       "name": "Tiramisu", 
-      "description": "Coffee flavored Italian dessert", 
+      "description": "Ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.", 
       "price_1": "6",
       "price_2": "95"
     },
     {
       "name": "Cannolo di Ricotta", 
-      "description": "Tube shaped pastry dough filled with sweet cream containing ricotta", 
+      "description": "Tube shaped pastry dough filled with ricotta", 
       "price_1": "6",
       "price_2": "00"
     },
     {
-      "name": "Slice of Nutella Sweet Pizza", 
+      "name": "Nutella Sweet Pizza", 
       "description": "Topped with chopped roasted almonds", 
       "price_1": "6",
       "price_2": "00"
     },
     {
-      "name": "Apple", 
+      "name": "Apple Tart Pizza", 
       "description": "Slices of apple, custard, carmelized sugar", 
       "price_1": "6",
       "price_2": "00"
