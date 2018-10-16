@@ -63,10 +63,10 @@
         <h1>Eat it here or take it to-go</h1>
       </div>
       <div class="row">
-        <div class="columns four offset-by-two">
+        <div class="columns five-md offset-by-one-md four-lg offset-by-two-lg">
           <a class="button button-secondary" href="#">Download menu</a>
         </div>
-        <div class="columns four">
+        <div class="columns five-md four-lg">
           <a class="button button-primary" href="#">Order online</a>
         </div>
       </div>
@@ -92,6 +92,9 @@
       </div>
     </div>
     <!--Menu being added in here via javascript-->
+    <div class="row disclaimer">
+      <p>*Although our gluten-free dough and menu items are made and cooked using dedicated kitchen utensils and trays, they are prepared in the same facility and ovens as our regular, flour-crust pizzas. We cannot guarantee that our pizzas and other menu items are 100% free of gluten as there is always a possibility of trace amounts crossing over from other kitchen areas. If you have Celiac and/or are highly sensitive, please advise the person taking your order and know that we will do our best, but cannot guarantee your order will not touch gluten somewhere in the process. Please consider this when ordering from our menu.</p>
+    </div>
   </div>
   
   <!--Universal Footer-->
@@ -120,13 +123,13 @@
   <script>
     function menuItem(item) {
       var div = document.createElement("div");
-      div.setAttribute("class", "columns four");
+      div.setAttribute("class", "columns four-md");
       var name = document.createElement("h4");
-      name.setAttribute("class", "xs-three-fourths two-thirds column");
+      name.setAttribute("class", "xs-three-fourths two-thirds-md column");
       name.innerHTML = item["name"];
       div.appendChild(name);
       var price_1 = document.createElement("h4");
-      price_1.setAttribute("class", "xs-one-fourth one-third column");
+      price_1.setAttribute("class", "xs-one-fourth one-third-md column");
       price_1.innerHTML = item["price_1"];
       div.appendChild(price_1);
       var price_2 = document.createElement("span");
