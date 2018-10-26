@@ -91,11 +91,11 @@ var menu = [
   },
   {
   "name": "Red Pizzas", 
-  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campania in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough is available for an extra $3.00.", 
+  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campania in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Casa Nostra", 
-      "description": "Tomato sauce, mozzarella, prosciutto di parma, cherry tomatoes, baby arugula, parmigiano, grated lemon peel.", 
+      "description": "Tomato sauce, mozzarella, prosciutto di parma, cherry tomatoes, baby arugula, parmigiano, lemon zest.", 
       "price_1": "14",
       "price_2": "00"
     }, 
@@ -119,7 +119,7 @@ var menu = [
     }, 
     {
       "name": "Sweet Pepper", 
-      "description": "Tomato sauce, mozzarella, sweet pepper, Italian sausage, onion, Kalamata olives.", 
+      "description": "Tomato sauce, mozzarella, bell pepper, Italian sausage, onion, Kalamata olives.", 
       "price_1" : "12", 
       "price_2" : "50"
     },
@@ -173,7 +173,7 @@ var menu = [
     },
     {
       "name": "Lemon", 
-      "description": "Tomato sauce, mozzarella, ham, cream cheese, mushrooms, grated lemon peel.", 
+      "description": "Tomato sauce, mozzarella, ham, cream cheese, mushrooms, lemon zest.", 
       "price_1" : "13", 
       "price_2" : "00"
     }
@@ -181,7 +181,7 @@ var menu = [
   },
   {
   "name": "White Pizzas", 
-  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough is available for an extra $3.00.", 
+  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Biancaneve", 
@@ -211,7 +211,7 @@ var menu = [
   },
   {
   "name": "Create Your Own Pizza", 
-  "description": "Choose from the base options below and add on toppings.", 
+  "description": "Choose from the base options below and add on toppings. <br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Marinara", 
