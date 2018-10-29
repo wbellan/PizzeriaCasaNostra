@@ -407,4 +407,28 @@ var menu = [
     },
     ]
   },
+  {
+  "name": "Drinks", 
+  "description": "Featured drinks listed below. Pizzeria Casa Nostra has full bar service.", 
+  "items":[
+    {
+      "name": "Featured Drink #1", 
+      "description": null, 
+      "price_1": "7",
+      "price_2": "00"
+    },
+    {
+      "name": "Featured Drink #2", 
+      "description": null, 
+      "price_1": "7",
+      "price_2": "00"
+    },
+    {
+      "name": "Featured Drink #3", 
+      "description": null, 
+      "price_1": "7",
+      "price_2": "00"
+    },
+    ]
+  }
 ]
