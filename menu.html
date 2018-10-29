@@ -51,7 +51,7 @@
         <a href="menu.html" class="active"><li>Menu</li></a>
         <a href="ourstory.html"><li>Our Story</li></a>
         <a href="locationhours.html"><li>Location & Hours</li></a>
-        <a href="orderonline.html"><li>Order online</li></a>
+        <a href="#"><li>Order online</li></a>
       </ul>
     </div>
   </div>
@@ -83,10 +83,10 @@
         <ul>
           <li>Jump to:</li>
           <a href="#Antipasti"><li>Antipasti</li></a>
-          <a href="#Insalate"><li>Insalate</li></a>
-          <a href="#Gourmet Pizzas"><li>Gourmet Pizzas</li></a>
+          <a href="#Insalate & Zuppe"><li>Insalate & Zuppe</li></a>
+          <a href="#Red Pizzas"><li>Red Pizzas</li></a>
           <a href="#White Pizzas"><li>White Pizzas</li></a>
-          <a href="#Pasta"><li>Pasta</li></a>
+          <a href="#Pastas"><li>Pastas</li></a>
           <a href="#Desserts"><li>Desserts</li></a>
         </ul>
       </div>
@@ -161,7 +161,6 @@
       button.appendChild(image_3);
       return button
     }
-
     function makeRow(){
       var row_box = document.createElement("div");
       row_box.setAttribute("class", "row");
@@ -184,7 +183,6 @@
       if (category['description']!==null){
         description_p.innerHTML = category['description']
       } ;
-
       items_box.appendChild(description_p);
       var row_box = makeRow();
       for (i = 0; i < category["items"].length; i++) {
@@ -198,13 +196,10 @@
           items_box.appendChild(row_box);
         }
       }
-
       div.appendChild(items_box);
       return div
     }
-
       window.onload = function(){
-
       t = document.getElementById("target");
       menu = menu.reverse()
       for (i=0;i<menu.length;i++){
@@ -213,16 +208,13 @@
         var acc = document.getElementsByClassName("expansion");
     var panel = document.getElementsByClassName("panel");
   var i;
-
   for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
           /* Toggle between adding and removing the "active" class,
           to highlight the button that controls the panel */
           this.classList.toggle("open");
-
           /* Toggle between hiding and showing the active panel */
           var panel = this.nextElementSibling;
-
           if (panel.style.height === "auto") {
               panel.style.height = "0";
           } else {
@@ -230,8 +222,6 @@
           }
       });
   }
-
-
     }
   </script>
 
