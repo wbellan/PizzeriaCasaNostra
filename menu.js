@@ -91,7 +91,7 @@ var menu = [
   },
   {
   "name": "Red Pizzas", 
-  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campania in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
+  "description": "All pizzas are 12 inches in size and made with house-made tomato sauce from the sunny hills of the region of Campania in Italy.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough or 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Casa Nostra", 
@@ -181,7 +181,7 @@ var menu = [
   },
   {
   "name": "White Pizzas", 
-  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
+  "description": "All pizzas are 12 inches in size and white pizzas are made without tomato sauce.<br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough or 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Biancaneve", 
@@ -211,7 +211,7 @@ var menu = [
   },
   {
   "name": "Create Your Own Pizza", 
-  "description": "Choose from the base options below and add on toppings. <br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough and 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
+  "description": "Choose from the base options below and add on toppings. <br>Any of our pizzas can be made as a calzone in the oven. Gluten Free Pizza Dough or 10-inch Cauliflower Pizza Dough is available for an extra $3.00.", 
   "items":[
     {
       "name": "Marinara", 
@@ -353,7 +353,7 @@ var menu = [
     },
     {
       "name": "Salame di Cioccolato", 
-      "description": "Made from cocoa, broken biscuits, butter, egg yolks, roasted almonds, liquir vermouth, served with custard sauce.", 
+      "description": "Made from cocoa, broken biscuits, butter, egg yolks, roasted almonds, liquor vermouth, served with custard sauce.", 
       "price_1": "7",
       "price_2": "00"
     },
