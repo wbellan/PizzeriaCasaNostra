@@ -269,7 +269,7 @@ var menu = [
   "items":[
     {
       "name": "Bolognese", 
-      "description": "Ragu bolognese", 
+      "description": "Ragù Bolognese", 
       "price_1": "12",
       "price_2": "50"
     }, 
@@ -293,7 +293,7 @@ var menu = [
     }, 
     {
       "name": "Lasagna Bolognese", 
-      "description": "Ragu bolognese, bechamele, Parmigiano Reggiano.", 
+      "description": "Ragù Bolognese, bechamele, Parmigiano Reggiano.", 
       "price_1" : "13", 
       "price_2" : "95"
     }, 
