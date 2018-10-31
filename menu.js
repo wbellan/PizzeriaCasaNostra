@@ -17,7 +17,7 @@ var menu = [
     }, 
     {
       "name": "Carpaccio", 
-      "description": "Beef carpaccio, flakes of parmigiano, baby arugula, capers, homemade citronette sauce.", 
+      "description": "Beef carpaccio, flakes of Parmigiano Reggiano, baby arugula, capers, homemade citronette sauce.", 
       "price_1" : "10", 
       "price_2" : "00"
     }, 
@@ -29,13 +29,13 @@ var menu = [
     }, 
     {
       "name": "Patate Fritte al Tartufo", 
-      "description": "French fries, truffle oil, grated parmigiano.", 
+      "description": "French fries, truffle oil, grated Parmigiano Reggiano.", 
       "price_1" : "9",
       "price_2" : "00"
     }, 
     {
       "name": "Foccacia Bread", 
-      "description": "Coarse sea salt, garlic, extra virgin olive oil, rosemary, grated parmigiano.", 
+      "description": "Coarse sea salt, garlic, extra virgin olive oil, rosemary, grated Parmigiano Reggiano.", 
       "price_1" : "4", 
       "price_2" : "50"
     }
@@ -53,7 +53,7 @@ var menu = [
     }, 
     {
       "name": "Insalata Caesar", 
-      "description": "Romaine lettuce, flakes of parmigiano, focaccia croutons, house made Caesar dressing. <br>(with Chicken add $3.50)", 
+      "description": "Romaine lettuce, flakes of Parmigiano Reggiano, focaccia croutons, house made Caesar dressing. <br>(with Chicken add $3.50)", 
       "price_1" : "7", 
       "price_2" : "95"
     }, 
@@ -77,7 +77,7 @@ var menu = [
     },
     {
       "name": "Arugula & Roasted Fennel", 
-      "description": "Baby arugula, roasted fennel, flakes of parmigiano, lemon, extra virgin olive oil.", 
+      "description": "Baby arugula, roasted fennel, flakes of Parmigiano Reggiano, lemon, extra virgin olive oil.", 
       "price_1" : "9", 
       "price_2" : "50"
     },
@@ -113,7 +113,7 @@ var menu = [
     }, 
     {
       "name": "Pesto", 
-      "description": "Tomato sauce, mozzarella, pesto, cherry tomatoes, parmigiano.", 
+      "description": "Tomato sauce, mozzarella, pesto, cherry tomatoes, Parmigiano Reggiano.", 
       "price_1" : "11", 
       "price_2" : "00"
     }, 
@@ -191,7 +191,7 @@ var menu = [
     },
     {
       "name": "5 Formaggi", 
-      "description": "Mozzarella, gorgonzola, swiss cheese, parmigiano, cream cheese, black pepper.", 
+      "description": "Mozzarella, gorgonzola, swiss cheese, Parmigiano Reggiano, cream cheese, black pepper.", 
       "price_1": "13",
       "price_2": "00"
     }, 
@@ -203,7 +203,7 @@ var menu = [
     }, 
     {
       "name": "Carbonara", 
-      "description": "Mozzarella, bacon, scrambled egg, parmigiano, parsley.", 
+      "description": "Mozzarella, bacon, scrambled egg, Parmigiano Reggiano, parsley.", 
       "price_1" : "12", 
       "price_2" : "50"
     }
@@ -233,7 +233,7 @@ var menu = [
     }, 
     {
       "name": "Alfredo", 
-      "description": "Heavy cream, butter, parmigiano. ", 
+      "description": "Heavy cream, butter, Parmigiano Reggiano. ", 
       "price_1" : "11", 
       "price_2" : "50"
     }
@@ -251,13 +251,13 @@ var menu = [
     }, 
     {
       "name": "Add $2.50", 
-      "description": "Baby Arugula<br>Anchovies<br>Ham<br>Eggplant<br>Italian Sausage<br>Fresh Mozzarella<br>Pepperoni<br>Ricotta Cheese<br>Bacon<br>Alfredo Sauce<br>Gorgonzola<br>Swiss Cheese<br>Robiola Cheese (soft cheese)<br>Parmagiano-Reggiano<br>Roasted Fennel<br>Fresh Pineapple<br>Tuna<br>Artichoke", 
+      "description": "Baby Arugula<br>Anchovies<br>Ham<br>Eggplant<br>Italian Sausage<br>Fresh Mozzarella<br>Pepperoni<br>Bacon<br>Alfredo Sauce<br>Gorgonzola<br>Swiss Cheese<br>Parmigiano Reggiano<br>Roasted Fennel<br>Fresh Pineapple<br>Tuna<br>Artichoke", 
       "price_1" : null, 
       "price_2" : null
     }, 
     {
       "name": "Add $4.00", 
-      "description": "Prosciutto de Parma<br>Spicy Sopressata<br>Chicken<br>Mozzarella di Bufala", 
+      "description": "Prosciutto di Parma<br>Spicy Sopressata<br>Chicken<br>Mozzarella di Bufala", 
       "price_1" : null, 
       "price_2" : null
     }
@@ -281,7 +281,7 @@ var menu = [
     }, 
     {
       "name": "Amatriciana", 
-      "description": "Tomato sauce, onion, pancetta, parmigiano.", 
+      "description": "Tomato sauce, onion, pancetta, Parmigiano Reggiano.", 
       "price_1" : "12", 
       "price_2" : "50"
     },
@@ -293,19 +293,19 @@ var menu = [
     }, 
     {
       "name": "Lasagna Bolognese", 
-      "description": "Ragu bolognese, bechamele, parmigiano.", 
+      "description": "Ragu bolognese, bechamele, Parmigiano Reggiano.", 
       "price_1" : "13", 
       "price_2" : "95"
     }, 
     {
       "name": "Quattro Formaggi", 
-      "description": "Parmigiano, fontina, gorgonzola, taleggio, ground pepper.", 
+      "description": "Parmigiano Reggiano, fontina, gorgonzola, taleggio, ground pepper.", 
       "price_1" : "13", 
       "price_2" : "00"
     },
     {
       "name": "Carbonara", 
-      "description": "Pancetta, whole egg, parmigiano, black pepper, parsley.", 
+      "description": "Pancetta, whole egg, Parmigiano Reggiano, black pepper, parsley.", 
       "price_1": "13",
       "price_2": "00"
     }, 
@@ -317,7 +317,7 @@ var menu = [
     }, 
     {
       "name": "Alfredo", 
-      "description": "Heavy cream, butter, parmigiano.<br>(with Chicken add $3.50)", 
+      "description": "Heavy cream, butter, Parmigiano Reggiano.<br>(with Chicken add $3.50)", 
       "price_1" : "13", 
       "price_2" : "00"
     },
@@ -335,7 +335,7 @@ var menu = [
     },
     {
       "name": "Parmigiana", 
-      "description": "Tomato sauce, fried eggplant, mozzarella, ham, hard-boiled egg, parmigiano, basil.", 
+      "description": "Tomato sauce, fried eggplant, mozzarella, ham, hard-boiled egg, Parmigiano Reggiano, basil.", 
       "price_1" : "13", 
       "price_2" : "00"
     }
@@ -358,7 +358,7 @@ var menu = [
       "price_2": "00"
     },
     {
-      "name": "Tiramisu", 
+      "name": "Tiramisù", 
       "description": "Ladyfingers dipped in coffee, layered with a whipped mixture of egg yolks, sugar, cream, and mascarpone cheese, flavoured with cocoa.", 
       "price_1": "8",
       "price_2": "95"
@@ -389,13 +389,13 @@ var menu = [
   "items":[
     {
       "name": "Marinara", 
-      "description": "Meat sauce add $1.00", 
+      "description": "Ragù Bolognese add $1.00", 
       "price_1": "7",
       "price_2": "00"
     },
     {
       "name": "Alfredo", 
-      "description": "Meat sauce add $1.00", 
+      "description": "Ragù Bolognese add $1.00", 
       "price_1": "7",
       "price_2": "00"
     },
