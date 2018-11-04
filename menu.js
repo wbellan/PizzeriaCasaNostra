@@ -10,8 +10,8 @@ var menu = [{
       {
         "name": "Prosciutto & Mozzarella",
         "description": "Prosciutto di Parma & Mozzarella served with a side of baby arugula and our focaccia. <br>(with Mozzarella di Bufala add $3.00)",
-        "price_1": "12",
-        "price_2": "95"
+        "price_1": "13",
+        "price_2": "00"
       },
       {
         "name": "Carpaccio",
@@ -22,8 +22,8 @@ var menu = [{
       {
         "name": "Caponata",
         "description": "Eggplant, bell pepper, crushed tomato, celery, onion, green olives, capers, pine nuts, cooked in sweet and sour.",
-        "price_1": "8",
-        "price_2": "75"
+        "price_1": "9",
+        "price_2": "00"
       },
       {
         "name": "Patate Fritte al Tartufo",
@@ -32,10 +32,10 @@ var menu = [{
         "price_2": "00"
       },
       {
-        "name": "Foccacia Bread",
+        "name": "Focaccia Bread",
         "description": "Coarse sea salt, garlic, extra virgin olive oil, rosemary, grated Parmigiano Reggiano.",
-        "price_1": "4",
-        "price_2": "50"
+        "price_1": "8",
+        "price_2": "00"
       }
     ]
   },
@@ -51,26 +51,26 @@ var menu = [{
       {
         "name": "Insalata Caesar",
         "description": "Romaine lettuce, flakes of Parmigiano Reggiano, focaccia croutons, house made Caesar dressing. <br>(with Chicken add $3.50)",
-        "price_1": "7",
-        "price_2": "95"
+        "price_1": "8",
+        "price_2": "00"
       },
       {
         "name": "Insalata Fagioli e Tonno <br>(Cannellini bean salad with tuna)",
         "description": "Cannellini beans, tuna in olive oil, red onion, celery, parsley, vinaigrette.",
-        "price_1": "7",
-        "price_2": "95"
+        "price_1": "8",
+        "price_2": "00"
       },
       {
         "name": "Insalata di Fagiolini <br>(Green bean salad)",
         "description": "Green beans, tomatoes, potatoes, red onion, oregano, vinaigrette.",
-        "price_1": "7",
-        "price_2": "95"
+        "price_1": "8",
+        "price_2": "00"
       },
       {
         "name": "Caprese",
         "description": "Mozzarella, tomatoes, basil, extra virgin olive oil. <br>(with Mozzarella di Bufala add $3.00)",
-        "price_1": "8",
-        "price_2": "95"
+        "price_1": "9",
+        "price_2": "00"
       },
       {
         "name": "Arugula & Roasted Fennel",
@@ -140,14 +140,14 @@ var menu = [{
       {
         "name": "Carnivora",
         "description": "Tomato sauce, mozzarella, Italian sausage, salami soppressata, ham.",
-        "price_1": "13",
-        "price_2": "95"
+        "price_1": "14",
+        "price_2": "00"
       },
       {
         "name": "Vegetarian",
         "description": "Tomato sauce, mozzarella, bell pepper, mushrooms, onion, cherry tomatoes, Kalamata olives, artichokes.",
-        "price_1": "12",
-        "price_2": "95"
+        "price_1": "13",
+        "price_2": "00"
       },
       {
         "name": "4 Stagioni",
@@ -260,16 +260,21 @@ var menu = [{
     "name": "Pastas",
     "description": "You can choose between spaghetti or penne.",
     "items": [{
+        "name": "Marinara",
+        "description": "Crushed tomato, garlic, basil, extra virgin olive oil.",
+        "price_1": "11",
+        "price_2": "00"
+      }, {
         "name": "Bolognese",
         "description": "Ragù Bolognese",
-        "price_1": "12",
-        "price_2": "50"
+        "price_1": "14",
+        "price_2": "00"
       },
       {
         "name": "Puttanesca",
         "description": "Tomato sauce, Kalamata olives, anchovies, capers, red pepper flakes.",
-        "price_1": "12",
-        "price_2": "00"
+        "price_1": "13",
+        "price_2": "50"
       },
       {
         "name": "Amatriciana",
@@ -280,14 +285,14 @@ var menu = [{
       {
         "name": "Vongole",
         "description": "Clams, white wine, oregano.",
-        "price_1": "14",
-        "price_2": "95"
+        "price_1": "15",
+        "price_2": "00"
       },
       {
         "name": "Lasagna Bolognese",
         "description": "Ragù Bolognese, bechamele, Parmigiano Reggiano.",
-        "price_1": "13",
-        "price_2": "95"
+        "price_1": "14",
+        "price_2": "00"
       },
       {
         "name": "Quattro Formaggi",
@@ -298,7 +303,7 @@ var menu = [{
       {
         "name": "Carbonara",
         "description": "Pancetta, whole egg, Parmigiano Reggiano, black pepper, parsley.",
-        "price_1": "13",
+        "price_1": "14",
         "price_2": "00"
       },
       {
@@ -322,7 +327,7 @@ var menu = [{
       {
         "name": "Tonno al Limone",
         "description": "Tuna in olive oil, lemon.",
-        "price_1": "13",
+        "price_1": "14",
         "price_2": "00"
       }
     ]
@@ -331,7 +336,7 @@ var menu = [{
     "name": "Others",
     "description": "",
     "items": [{
-      "name": "Parmigiana",
+      "name": "Eggplant Parmigiana",
       "description": "Tomato sauce, fried eggplant, mozzarella, ham, hard-boiled egg, Parmigiano Reggiano, basil.",
       "price_1": "13",
       "price_2": "00"
@@ -342,13 +347,13 @@ var menu = [{
     "description": "(You can choose between spaghetti or penne)",
     "items": [{
         "name": "Marinara",
-        "description": "Ragù Bolognese add $1.00",
+        "description": "Crushed tomato, garlic, basil, extra virgin olive oil. <br>(with Ragù Bolognese add $1.00)",
         "price_1": "7",
         "price_2": "00"
       },
       {
         "name": "Alfredo",
-        "description": "Ragù Bolognese add $1.00",
+        "description": "Heavy cream, butter, Parmigiano Reggiano. <br>(with Ragù Bolognese add $1.00)",
         "price_1": "7",
         "price_2": "00"
       },
@@ -366,25 +371,25 @@ var menu = [{
     "items": [{
         "name": "Panna Cotta",
         "description": "Sweetened cream dessert topped with a strawberry topping.",
-        "price_1": "7",
+        "price_1": "8",
         "price_2": "00"
       },
       {
         "name": "Salame di Cioccolato",
         "description": "Made from cocoa, broken biscuits, butter, egg yolks, roasted almonds, liquor vermouth, served with custard sauce.",
-        "price_1": "7",
+        "price_1": "8",
         "price_2": "00"
       },
       {
         "name": "Tiramisù",
         "description": "Ladyfingers dipped in coffee, layered with a whipped mixture of egg yolks, sugar, cream, and mascarpone cheese, flavoured with cocoa.",
-        "price_1": "8",
-        "price_2": "95"
+        "price_1": "9",
+        "price_2": "00"
       },
       {
-        "name": "Cannolo di Ricotta",
-        "description": "Cannolo tube filled with sweet ricotta.",
-        "price_1": "7",
+        "name": "Cannoli di Ricotta",
+        "description": "3 small cannoli filled with 3 different fillings.",
+        "price_1": "9",
         "price_2": "00"
       },
       {
