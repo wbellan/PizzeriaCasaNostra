@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="menu">
+<body class="menu food">
   
   <!--Navigation-->
   <div class="nav" id="myNav">
@@ -48,10 +48,28 @@
     <div class="nav-links">
       <ul>
         <a href="index.html"><li>Home</li></a>
-        <a href="menu.html" class="active"><li>Menu</li></a>
+        <div class="dropdown dropdownmenu" id="dropdownmenu" onclick="openMenuDropdown()">
+          <button class="dropbtn active">Menu
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="food.html">Food</a>
+            <a href="drinks.html">Drinks</a>
+          </div>
+        </div>
         <a href="ourstory.html"><li>Our Story</li></a>
         <a href="locationhours.html"><li>Location & Hours</li></a>
-        <a href="#"><li>Order online</li></a>
+        <div class="dropdown dropdownorder" id="dropdownorder" onclick="openOrderDropdown()">
+          <button class="dropbtn">Order Online
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Carryout</a>
+            <a href="#">Delivery</a>
+          </div>
+        </div>
       </ul>
     </div>
   </div>
@@ -87,9 +105,10 @@
           <a href="#Red Pizzas"><li>Red Pizzas</li></a>
           <a href="#White Pizzas"><li>White Pizzas</li></a>
           <a href="#Pastas"><li>Pastas</li></a>
-          <a href="#Desserts"><li>Desserts</li></a>
+          <a href="#Others"><li>Others</li></a>
           <a href="#Kid's Menu"><li>Kid's Menu</li></a>
-          <a href="#Drinks"><li>Drinks</li></a>
+          <a href="#Desserts"><li>Desserts</li></a>
+          
         </ul>
       </div>
     </div>
@@ -108,6 +127,7 @@
     <p>© Pizzeria Casa Nostra. All rights reserved.</p>
   </footer>
 
+  <!--Script for Navigation functionality-->
   <script>
   function myFunction() {
       var x = document.getElementById("myNav");
@@ -119,9 +139,39 @@
   }
   </script>
 
-  <script src="menu.js"></script>
+  <script>
+  function openMenuDropdown() {
+      var x = document.getElementById("dropdownmenu");
+      if (x.className === "dropdown dropdownmenu") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownmenu";
+      }
+  }
+  function openOrderDropdown() {
+      var x = document.getElementById("dropdownorder");
+      if (x.className === "dropdown dropdownorder") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownorder";
+      }
+  }
+  </script>
+
+  <script>
+  function openDropdown() {
+      var x = document.getElementById("dropdown");
+      if (x.className === "dropdown") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown";
+      }
+  }
+  </script>
 
   <!--Script for making menu-->
+  <script src="menu.js"></script>
+
   <script>
     function menuItem(item) {
       var div = document.createElement("div");
@@ -171,6 +221,9 @@
     function makeMenuCategory(category) {
       var div = document.createElement("div");
       div.setAttribute("class", "row accordion");
+      var name = category["name"];
+      var shortName = name.replace(/\s+/g, '');
+      div.setAttribute("id", shortName);
       var h2 = document.createElement("h2");
       h2.innerHTML = category["name"];
       var name = category["name"];

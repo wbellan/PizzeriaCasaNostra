@@ -263,7 +263,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   width: 100%;
-  padding: 10px 20px;
+  padding: 8px 18px;
   margin: 8px auto;
   color: #555;
   text-align: center;
@@ -595,7 +595,7 @@ footer .fa {
 @media (min-width: 875px) {
   .nav-title {
     background-color: transparent;
-    height: 104px;
+    height: 84px;
   }
   .nav-title .logo {
     left: 0;
@@ -609,13 +609,18 @@ footer .fa {
   }
   .nav-title .logo img:last-of-type {
     display: block;
-    height: 16rem;
-    margin-left: 2.4rem;
+    height: 12rem;
+    margin-left: -2.6rem;
   }
 }
 @media (min-width: 1000px) {
+  .nav-title {
+    height: 96px;
+  }
   .nav-title .logo img:last-of-type {
-    height: 20rem;
+    display: block;
+    height: 16rem;
+    margin-left: 0rem;
   }
 }
 
@@ -732,7 +737,8 @@ NOTE: Height and opacity change used to create open/close transition
     border-bottom: 8px solid #AE2B11;
     color: #AE2B11;
   }
-  .nav-links .active li {
+  .nav-links .active li,
+  .nav-links .dropbtn.active {
     border-bottom: 8px solid #AE2B11;
     margin: 0;
   }
@@ -763,6 +769,138 @@ NOTE: Height and opacity change used to create open/close transition
     line-height: 1.4;
     height: 56px;
     padding: 8px 24px;
+  }
+}
+
+/* Navgiation dropdown currently being used for Menu and Order Online
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dropdown {
+  width: 100%;
+  margin: 1.6rem auto;
+  display: block;
+}
+@media (min-width: 875px) {
+  .dropdown {
+    width: auto;
+    margin: 0;
+  }
+  .dropdown:hover {
+    border-bottom: 8px solid #AE2B11;
+    color: #AE2B11;
+  }
+}
+
+/* Dropbtn is referring to the link in the navigation acting as header for the dropdown list
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dropdown .dropbtn {
+  color: #333;
+  border: none;
+  border-radius: 0;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-radius: 0;
+  outline: none;
+  margin: 0;
+}
+.dropdown .dropbtn:hover,
+.dropdown .dropbtn:focus {
+  border-color: #AE2B11 !important;
+}
+.dropdown.drop-open .dropbtn {
+  color: #AE2B11;
+}
+.dropdown .active {
+  border-left: 1rem solid #AE2B11;
+  color: #AE2B11;
+}
+@media (min-width: 875px) {
+  .dropdown .dropbtn {
+    border-bottom: 8px solid #fff0;
+  }
+  .dropdown.drop-open .dropbtn {
+    border-bottom: 8px solid #AE2B11;
+  }
+  .dropdown .dropbtn:hover {
+    color: #AE2B11 !important;
+  }
+  .dropdown .dropbtn, 
+  .dropdown.dropopen .dropdown-content {
+    width: auto;
+  }
+  .dropdown .active, 
+  .nav-links .dropbtn.active {
+    border-left: none;
+  }
+}
+@media (min-width: 1000px) {
+  .dropdown .dropbtn {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Switching the arrow for the dropdown dependent on state
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dropdown .fa-caret-up {
+  display: none;
+}
+.drop-open .fa-caret-up {
+  display: inline-block;
+}
+.drop-open .fa-caret-down {
+  display: none;
+}
+@media (min-width: 875px) {
+  .dropdown:hover .fa-caret-up,
+  .dropdown:focus .fa-caret-up,
+  .drop-open .fa-caret-up {
+    display: inline-block;
+  }
+  .dropdown:hover .fa-caret-down,
+  .dropdown:focus .fa-caret-down,
+  .drop-open .fa-caret-down {
+    display: none;
+  }
+}
+
+/* Dropdown content (hidden by default)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffffd8;
+  min-width: 118px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: -16px;
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.dropdown.drop-open .dropdown-content {
+  display: block;
+}
+.dropdown .dropdown-content a {
+  font-size: 2.6rem;
+  height: auto !important;
+  font-weight: 600;
+  float: none;
+  color: #363636;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #ae2b11;
+  color: white;
+}
+@media (min-width: 875px) {
+  .dropdown .dropdown-content {
+    margin-top: 0;
   }
 }
 
@@ -916,21 +1054,59 @@ NOTE: Height and opacity change used to create open/close transition
   }
 }
 
+/* Additonal Toppings section on Menu page specifics
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.drinks .panel .row h4 {
+  text-align: left;
+  margin-bottom: 0;
+}
+.drinks .panel .row p {
+  margin-top: 12px;
+  font-size: 1.8rem;
+}
+.drinks #Beers .row .four-md {
+  width: 100%;
+  margin-left: 0;
+}
+@media (min-width: 875px) {
+  .menu #AdditionalToppings .columns {
+    width: 100% !important;
+    margin: 0;
+  }
+  .menu #AdditionalToppings .row h4 {
+    width: 15%;
+    float: left;
+  }
+  .menu #AdditionalToppings .row p {
+    width: 85%;
+    float: left;
+    clear: none;
+  }
+}
+@media (min-width: 1000px) {
+  .menu #AdditionalToppings .row h4 {
+    width: 14%;
+  }
+  .menu #AdditionalToppings .row p {
+    width: 86%;
+  }
+}
+
 /* Accordion buttons for the Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .accordion button {
-    border-radius: 0;
-    border: none;
-    border-bottom: 5px solid black;
-    cursor: pointer;
-    padding: 10px 16px 0;
-    width: 100%;
-    text-align: left;
-    transition: 0.4s;
-    font-family: 'Playfair Display';
-    font-size: 2.8rem;
-    color: #333;
-    height: auto;
+  border-radius: 0;
+  border: none;
+  border-bottom: 5px solid black;
+  cursor: pointer;
+  padding: 10px 16px 0;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  font-family: 'Playfair Display';
+  font-size: 2.8rem;
+  color: #333;
+  height: auto;
 }
 .accordion button .flame {
 	height: 56px;
@@ -1013,6 +1189,32 @@ NOTE: Height and opacity change used to create open/close transition
 	.accordion .panel .note {
 		margin-top: 0;
 	}
+}
+
+/* Drinks page specifics
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.drinks .panel .row h4 {
+  text-align: left;
+  margin-bottom: 0;
+}
+.drinks .panel .row p {
+  margin-top: 12px;
+  font-size: 1.8rem;
+}
+.drinks #Beers .row .four-md {
+  width: 100%;
+  margin-left: 0;
+}
+@media (min-width: 875px) {
+  .drinks #Beers .panel .row h4:first-of-type {
+    float: left;
+    width: 10%;
+    margin-top: 0;
+  }
+  .drinks #Beers .panel .row h4:last-of-type {
+    float: left;
+    width: 90%;
+  }
 }
 
 /* Our Story specifics
