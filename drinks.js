@@ -158,7 +158,7 @@ var menu = [{
     "description": null,
     "items": [{
         "name": "On Tap",
-        "description": "512 IPA, Thirsty Goat, Zoe, Miller Lite, Peroni, Buckethead IPA, Dos Equis, Shiner Bock, Pacifico, Stash IPA, Electric Jellyfish Celis White, Big Bend Hefeweizen, Love Street, Fat Tire, Austin Eastcider Blood Orange Cider",
+        "description": "512 IPA, Thirsty Goat, Zoe, Miller Lite, Peroni, Buckethead IPA, Dos Equis, Shiner Bock, Pacifico, Stash IPA, Zombie Dragon, Celis White, Big Bend Hefeweizen, Love Street, Fat Tire, Austin Eastcider Blood Orange Cider",
         "register": null
       },
       {

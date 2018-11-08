@@ -265,7 +265,6 @@ input[type="button"] {
   width: 100%;
   padding: 8px 18px;
   margin: 8px auto;
-  color: #555;
   text-align: center;
   font-size: 2.4rem;
   font-weight: 600;
@@ -320,20 +319,20 @@ input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
   color: #AE2B11;
   background-color: #fff;
-  border-color: #fff; }
+  border-color: #AE2B11; }
 .button.button-secondary:hover,
 button.button-secondary:hover,
 input[type="submit"].button-secondary:hover,
 input[type="reset"].button-secondary:hover,
 input[type="button"].button-secondary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
+.button.button-secondary:focus,
+button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
   color: #AE2B11;
   background-color: #d2d2d2;
-  border-color: #d2d2d2; }
+  border-color: #AE2B11; }
 
 /* Medium+ sizes for buttons */
 @media screen and (min-width:640px) {
@@ -400,6 +399,28 @@ input[type="button"].button-secondary:focus {
     color: #AE2B11;
     background-color: #d2d2d2;
     border-color: #d2d2d2; }
+}
+.button-primary-sm {
+  display: inline-block;
+  width: 100%;
+  padding: 4px 12px;
+  margin: 8px auto;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: .1rem;
+  white-space: nowrap;
+  background-color: #891B09;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;;
+  transition: .1s ease-in-out;
+}
+.button-primary-sm:hover {
+  background-color: #660E05;
+  color: #fff;
 }
 
 /* Lists
@@ -831,14 +852,14 @@ NOTE: Height and opacity change used to create open/close transition
   .nav-links .dropbtn.active {
     border-left: none;
   }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 @media (min-width: 1000px) {
   .dropdown .dropbtn {
     padding-top: 20px;
     padding-bottom: 16px;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
 }
 
@@ -1032,6 +1053,9 @@ NOTE: Height and opacity change used to create open/close transition
 	font-size: 1.8rem;
 	text-align: center;
 }
+.menu .download {
+  display: none;
+}
 @media (min-width: 640px) {
   .menu .disclaimer {
     padding: 40px 24px 0;
@@ -1049,6 +1073,14 @@ NOTE: Height and opacity change used to create open/close transition
 		display: inline;
 		margin: 0 8px;
 	}
+  .menu .download {
+    display: block;
+  }
+  .menu .download .button-primary-sm {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+  }
   .menu .disclaimer {
     padding: 40px 0 0;
   }
