@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="ourstory">
-
+<body class="menu drinks">
+  
   <!--Navigation-->
   <div class="nav" id="myNav">
     <div class="nav-title">
@@ -49,7 +49,7 @@
       <ul>
         <a href="index.html"><li>Home</li></a>
         <div class="dropdown dropdownmenu" id="dropdownmenu" onclick="openMenuDropdown()">
-          <button class="dropbtn">Menu
+          <button class="dropbtn active">Menu
             <i class="fa fa-caret-down"></i>
             <i class="fa fa-caret-up"></i>
           </button>
@@ -58,7 +58,7 @@
             <a href="drinks.html">Drinks</a>
           </div>
         </div>
-        <a href="ourstory.html" class="active"><li>Our Story</li></a>
+        <a href="ourstory.html"><li>Our Story</li></a>
         <a href="locationhours.html"><li>Location & Hours</li></a>
         <div class="dropdown dropdownorder" id="dropdownorder" onclick="openOrderDropdown()">
           <button class="dropbtn">Order Online
@@ -69,7 +69,6 @@
             <a href="#">Carryout</a>
             <a href="#">Delivery</a>
           </div>
-        </div>
       </ul>
     </div>
   </div>
@@ -78,72 +77,29 @@
   <div class="hero">
     <div class="container">
       <div class="row">
-        <h1>Our custom oven was designed to bake the perfect pizza.</h1>
+        <h1>Bottoms up</h1>
       </div>
       <div class="row">
-        <div class="columns four-md offset-by-two-md">
+        <div class="columns five-md offset-by-one-md four-lg offset-by-two-lg">
           <a class="button button-secondary" href="#">Order Delivery</a>
         </div>
-        <div class="columns four-md">
+        <div class="columns five-md four-lg">
           <a class="button button-primary" href="#">Order Carryout</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!--Main page content-->
   <div class="container main-content">
-    <div class="row">
-      <div class="columns four-md column-right-md">
-        <img src="static/assets/makingpizza.png" alt=""/>
-      </div>
-      <div class="columns seven-md" style="margin-left:0;">
-        <h1>What we're trying to do?</h1>
-        <p class="large">Instead of chef info, maybe do a little bit on why you're opening this restaurant? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
+    <!--Logo at the top of the menu-->
+    <div class="row" id = "target">
+      <img src="static/assets/logo_simplified.svg" alt="" class="name"/>
+      <img src="static/assets/logo_horizontal.svg" alt="" class="name"/>
     </div>
-    <div class="row">
-    </div>
-    <div class="row">
-      <div class="columns four-md">
-        <img src="static/assets/oven.png" alt=""/>
-      </div>
-      <div class="seven-md offset-by-one-md columns">
-        <h1>Forza Forni Oven </h1>
-        <p class="large">As of Pizzeria Casa Nostra's opening, we are only 1 of 3 restaurants that feature the Bistro Twister by <a href="https://forzaforni.com/">Forna Forzi</a>. These historic Italian ovens are authentic with boutique style service.</p>
-        <p class="large">The Bistro Twister features the world's only rotating monoblock refractory oven floor, which provides incredible even heat transfer and retention. Say goodbye to hot & cold spots, and enjoy the perfect bake.</p>
-      </div>
-    </div>
+    <!--Menu being added in here via javascript-->
   </div>
-  <div class="gray-bg">
-    <div class="container main-content gray-bg">
-      <h1>Our family has been in the restaurant business for 60 years</h1>
-      <div class="row">
-        <div class="six-md columns">
-          <p class="large">Write a lil thing about the family here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="six-md columns">
-          <p class="large">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="six-md columns">
-          <img src="static/assets/dough.png" alt=""/>
-        </div>
-        <div class="six-md columns">
-          <img src="static/assets/tomatoes.png" alt=""/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="six-md columns">
-          <p class="large">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-        </div>
-        <div class="six-md columns">
-          <p class="large">Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <!--Universal Footer-->
   <footer>
     <p>Follow us on social media</p>
@@ -193,6 +149,111 @@
           x.className = "dropdown";
       }
   }
+  </script>
+
+  <!--Script for making menu-->
+  <script src="drinks.js"></script>
+
+  <script>
+    function menuItem(item) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "columns four-md");
+      var name = document.createElement("h4");
+      name.setAttribute("class", "column");
+      name.innerHTML = item["name"];
+      div.appendChild(name);
+      var description = document.createElement("h4");
+      description.innerHTML = item["description"];
+      div.appendChild(description);
+      var register = document.createElement("p");
+      register.innerHTML = item["register"];
+      div.appendChild(register);
+      return div
+    }
+    function makeButton(name) {
+      var button = document.createElement("button");
+      button.setAttribute("class", "expansion");
+      var image_1 = document.createElement("img");
+      image_1.setAttribute("src", "static/assets/plus.svg");
+      image_1.setAttribute("class", "plus");
+      var image_2 = document.createElement("img");
+      image_2.setAttribute("src", "static/assets/minus.svg");
+      image_2.setAttribute("class", "minus");
+      var image_3 = document.createElement("img");
+      image_3.setAttribute("src", "static/assets/flame.svg");
+      image_3.setAttribute("class", "flame");
+      var title_p = document.createElement("p");
+      title_p.innerHTML = name;
+      button.appendChild(image_1);
+      button.appendChild(image_2);
+      button.appendChild(title_p);
+      button.appendChild(image_3);
+      return button
+    }
+    function makeRow(){
+      var row_box = document.createElement("div");
+      row_box.setAttribute("class", "row");
+      return row_box
+    }
+    function makeMenuCategory(category) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "row accordion");
+      var name = category["name"];
+      div.setAttribute("id", name);
+      var h2 = document.createElement("h2");
+      h2.innerHTML = category["name"];
+      var name = category["name"];
+      h2.setAttribute("id", name);
+      var button = makeButton(category["name"]);
+      div.appendChild(h2);
+      div.appendChild(button);
+      var items_box = document.createElement("div");
+      items_box.setAttribute("class", "panel");
+      var description_p = document.createElement("p");
+      description_p.setAttribute("class", "note");
+      if (category['description']!==null){
+        description_p.innerHTML = category['description']
+      } ;
+      items_box.appendChild(description_p);
+      var row_box = makeRow();
+      for (i = 0; i < category["items"].length; i++) {
+        row_box.appendChild(menuItem(category["items"][i]))
+        if (i%3===2){
+          items_box.appendChild(row_box);
+          row_box = makeRow()
+        }
+        
+        if ((i===category['items'].length-1) & (i%3!==2)){
+          items_box.appendChild(row_box);
+        }
+      }
+      div.appendChild(items_box);
+        return div
+      }
+      window.onload = function(){
+      t = document.getElementById("target");
+      menu = menu.reverse()
+      for (i=0;i<menu.length;i++){
+        t.after(makeMenuCategory(menu[i]));
+      }
+      var acc = document.getElementsByClassName("expansion");
+      var panel = document.getElementsByClassName("panel");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("open");
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.height === "auto") {
+              panel.style.height = "0";
+          } else {
+              panel.classList.toggle("selected");
+          }
+      });
+  }
+    }
   </script>
 
 <!-- End Document

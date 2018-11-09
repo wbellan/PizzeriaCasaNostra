@@ -48,10 +48,28 @@
     <div class="nav-links">
       <ul>
         <a href="index.html" class="active"><li>Home</li></a>
-        <a href="menu.html"><li>Menu</li></a>
+        <div class="dropdown dropdownmenu" id="dropdownmenu" onclick="openMenuDropdown()">
+          <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="food.html">Food</a>
+            <a href="drinks.html">Drinks</a>
+          </div>
+        </div>
         <a href="ourstory.html"><li>Our Story</li></a>
         <a href="locationhours.html"><li>Location & Hours</li></a>
-        <a href="#"><li>Order online</li></a>
+        <div class="dropdown dropdownorder" id="dropdownorder" onclick="openOrderDropdown()">
+          <button class="dropbtn">Order Online
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Carryout</a>
+            <a href="#">Delivery</a>
+          </div>
+        </div>
       </ul>
     </div>
   </div>
@@ -64,10 +82,10 @@
       </div>
       <div class="row">
         <div class="columns four-md offset-by-two-md">
-          <a class="button button-secondary" href="menu.html">View menu</a>
+          <a class="button button-secondary" href="food.html">View menu</a>
         </div>
         <div class="columns four-md">
-          <a class="button button-primary" href="#">Order online</a>
+          <a class="button button-primary" href="#">Order Carryout</a>
         </div>
       </div>
     </div>
@@ -81,12 +99,12 @@
   </div>
   <div class="section pizza">
     <div class="row">
-      <h1>With one of only 3 Forza Forni ovens in Texas, we're (almost) one of a kind.</h1>
+      <h1>With one of only 3 Forza Forni Bistro-Twister ovens in Texas, we're (almost) one of a kind.</h1>
     </div>
   </div>
   <div class="container main-content">
     <div class="row">
-      <h1>Our family has been in the restaurant game for 60 years</h1>
+      <h1>Our family has been in the restaurant game for a combined 60 years</h1>
       <p class="p-large">We have a passion for serving food made from high quality ingredients that will leave you wanting to come back for more. We specialize in Artisan style pizza with techniques and recipes straight from Italy.</p>
       <div class="columns four-md offset-by-four-md">
         <a class="button button-primary" href="ourstory.html">Read our story</a>
@@ -102,16 +120,47 @@
     <p>© Pizzeria Casa Nostra. All rights reserved.</p>
   </footer>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "nav") {
-        x.className += " open";
-    } else {
-        x.className = "nav";
-    }
-}
-</script>
+  <!--Script for Navigation functionality-->
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "nav") {
+          x.className += " open";
+      } else {
+          x.className = "nav";
+      }
+  }
+  </script>
+
+  <script>
+  function openMenuDropdown() {
+      var x = document.getElementById("dropdownmenu");
+      if (x.className === "dropdown dropdownmenu") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownmenu";
+      }
+  }
+  function openOrderDropdown() {
+      var x = document.getElementById("dropdownorder");
+      if (x.className === "dropdown dropdownorder") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownorder";
+      }
+  }
+  </script>
+
+  <script>
+  function openDropdown() {
+      var x = document.getElementById("dropdown");
+      if (x.className === "dropdown") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown";
+      }
+  }
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

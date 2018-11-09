@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="menu">
+<body class="menu food">
   
   <!--Navigation-->
   <div class="nav" id="myNav">
@@ -48,10 +48,28 @@
     <div class="nav-links">
       <ul>
         <a href="index.html"><li>Home</li></a>
-        <a href="menu.html" class="active"><li>Menu</li></a>
+        <div class="dropdown dropdownmenu" id="dropdownmenu" onclick="openMenuDropdown()">
+          <button class="dropbtn active">Menu
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="food.html">Food</a>
+            <a href="drinks.html">Drinks</a>
+          </div>
+        </div>
         <a href="ourstory.html"><li>Our Story</li></a>
         <a href="locationhours.html"><li>Location & Hours</li></a>
-        <a href="#"><li>Order online</li></a>
+        <div class="dropdown dropdownorder" id="dropdownorder" onclick="openOrderDropdown()">
+          <button class="dropbtn">Order Online
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Carryout</a>
+            <a href="#">Delivery</a>
+          </div>
+        </div>
       </ul>
     </div>
   </div>
@@ -64,10 +82,10 @@
       </div>
       <div class="row">
         <div class="columns five-md offset-by-one-md four-lg offset-by-two-lg">
-          <a class="button button-secondary" href="#">Download menu</a>
+          <a class="button button-secondary" href="#">Order Delivery</a>
         </div>
         <div class="columns five-md four-lg">
-          <a class="button button-primary" href="#">Order online</a>
+          <a class="button button-primary" href="#">Order Carryout</a>
         </div>
       </div>
     </div>
@@ -93,6 +111,11 @@
           
         </ul>
       </div>
+      <div class="row download">
+        <div class="columns twelve">
+          <a class="button button-primary-sm" href="static/assets/Menu_PDF_Final 110718.pdf">Download Menu</a>
+        </div>
+      </div>
     </div>
     <!--Menu being added in here via javascript-->
     <div class="row disclaimer">
@@ -109,6 +132,7 @@
     <p>© Pizzeria Casa Nostra. All rights reserved.</p>
   </footer>
 
+  <!--Script for Navigation functionality-->
   <script>
   function myFunction() {
       var x = document.getElementById("myNav");
@@ -120,9 +144,39 @@
   }
   </script>
 
-  <script src="menu.js"></script>
+  <script>
+  function openMenuDropdown() {
+      var x = document.getElementById("dropdownmenu");
+      if (x.className === "dropdown dropdownmenu") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownmenu";
+      }
+  }
+  function openOrderDropdown() {
+      var x = document.getElementById("dropdownorder");
+      if (x.className === "dropdown dropdownorder") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown dropdownorder";
+      }
+  }
+  </script>
+
+  <script>
+  function openDropdown() {
+      var x = document.getElementById("dropdown");
+      if (x.className === "dropdown") {
+          x.className += " drop-open";
+      } else {
+          x.className = "dropdown";
+      }
+  }
+  </script>
 
   <!--Script for making menu-->
+  <script src="menu.js"></script>
+
   <script>
     function menuItem(item) {
       var div = document.createElement("div");
@@ -164,7 +218,6 @@
       button.appendChild(image_3);
       return button
     }
-
     function makeRow(){
       var row_box = document.createElement("div");
       row_box.setAttribute("class", "row");
@@ -173,6 +226,9 @@
     function makeMenuCategory(category) {
       var div = document.createElement("div");
       div.setAttribute("class", "row accordion");
+      var name = category["name"];
+      var shortName = name.replace(/\s+/g, '');
+      div.setAttribute("id", shortName);
       var h2 = document.createElement("h2");
       h2.innerHTML = category["name"];
       var name = category["name"];
@@ -187,7 +243,6 @@
       if (category['description']!==null){
         description_p.innerHTML = category['description']
       } ;
-
       items_box.appendChild(description_p);
       var row_box = makeRow();
       for (i = 0; i < category["items"].length; i++) {
@@ -201,13 +256,10 @@
           items_box.appendChild(row_box);
         }
       }
-
       div.appendChild(items_box);
       return div
     }
-
       window.onload = function(){
-
       t = document.getElementById("target");
       menu = menu.reverse()
       for (i=0;i<menu.length;i++){
@@ -216,16 +268,13 @@
         var acc = document.getElementsByClassName("expansion");
     var panel = document.getElementsByClassName("panel");
   var i;
-
   for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
           /* Toggle between adding and removing the "active" class,
           to highlight the button that controls the panel */
           this.classList.toggle("open");
-
           /* Toggle between hiding and showing the active panel */
           var panel = this.nextElementSibling;
-
           if (panel.style.height === "auto") {
               panel.style.height = "0";
           } else {
@@ -233,8 +282,6 @@
           }
       });
   }
-
-
     }
   </script>
 
