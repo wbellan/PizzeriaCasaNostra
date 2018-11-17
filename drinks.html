@@ -191,8 +191,9 @@
     function makeMenuCategory(category) {
       var div = document.createElement("div");
       div.setAttribute("class", "row accordion");
-      var name = category["name"];
-      div.setAttribute("id", name);
+      var name = category["name"];var name = category["name"];
+      var shortName = name.replace(/\s+/g, '');
+      div.setAttribute("id", shortName);
       var h2 = document.createElement("h2");
       h2.innerHTML = category["name"];
       var name = category["name"];
