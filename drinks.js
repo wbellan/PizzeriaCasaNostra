@@ -223,4 +223,14 @@ var menu = [{
       },
     ]
   },
+  {
+    "name": "Beverages",
+    "description": null,
+    "items": [{
+        "name": null,
+        "description": "Topo Chico Lime, Topo Chico Grapefruit, Topo Chico, Monster, Monster Low Carb, Coke, Diet Coke, Coke Zero, Mexican Coke, Dr. Pepper, Sprite, Waterloo Mango, Waterloo Watermelon, Waterloo Original, Waterloo Lime, Teas and Fountain Drinks, Coffee, Cappucino",
+        "register": null
+      },
+    ]
+  },
 ]

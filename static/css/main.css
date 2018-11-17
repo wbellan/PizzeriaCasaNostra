@@ -1131,7 +1131,10 @@ NOTE: Height and opacity change used to create open/close transition
   }
 }
 @media (min-width: 875px) {
-	.menu .jumplinks {
+	.menu h2 {
+    margin: 2rem 0 0 0;
+  }
+  .menu .jumplinks {
 		display: block;
 	}
 	.menu .jumplinks ul {
@@ -1295,7 +1298,8 @@ NOTE: Height and opacity change used to create open/close transition
 }
 .drinks #Beers .row .four-md,
 .drinks #HardSeltzer .row .four-md ,
-.drinks #Liquors .row .four-md  {
+.drinks #Liquors .row .four-md,
+.drinks #Beverages .row .four-md  {
   width: 100%;
   margin-left: 0;
 }
@@ -1312,6 +1316,9 @@ NOTE: Height and opacity change used to create open/close transition
   .drinks #Liquors .panel .row h4:last-of-type  {
     float: left;
     width: 85%;
+  }
+  .drinks #Beverages .panel .row h4 {
+    width: 100%;
   }
 }
 
