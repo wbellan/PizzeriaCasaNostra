@@ -1039,7 +1039,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Home page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home .hero {
-  background-image: url('../assets/home-hero-2.jpg');
+  background-image: url('../assets/home-hero.jpg');
   padding: 40px 0 30px 0;
 }
 .home .hero img {
@@ -1057,7 +1057,7 @@ NOTE: Height and opacity change used to create open/close transition
   text-align: center;
 }
 .home .pizza {
-  background-image: url('../assets/home-oven-2.jpg');
+  background-image: url('../assets/home-oven.jpg');
   background-size: cover;
   background-position: left center;
   color: white;
@@ -1077,7 +1077,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Menu page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .food .hero {
-  background-image: url('../assets/food-hero-2.jpg');
+  background-image: url('../assets/food-hero.jpg');
 }
 .menu .main-content {
   padding: 40px 0;
@@ -1286,7 +1286,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Drinks page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .drinks .hero {
-  background-image: url('../assets/drinks-hero-2.jpg');
+  background-image: url('../assets/drinks-hero.jpg');
 }
 .drinks .panel .row h4 {
   text-align: left;
@@ -1325,7 +1325,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Our Story specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ourstory .hero {
-  background-image: url('../assets/ourstory-hero-2.jpg');
+  background-image: url('../assets/ourstory-hero.jpg');
 }
 .ourstory .gray-bg h1 {
   text-align: center;
@@ -1349,7 +1349,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Location & Hours specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .locationhours .hero {
-	background-image: url('../assets/location-hero-2.jpg');
+	background-image: url('../assets/location-hero.jpg');
  	background-position: left center;
 }
 .locationhours .main-content a i {
