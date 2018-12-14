@@ -158,14 +158,79 @@ var menu = [{
     "description": null,
     "items": [{
         "name": "On Tap",
-        "description": "512 IPA, Thirsty Goat, Zoe, Miller Lite, Peroni, Buckethead IPA, Dos Equis, Shiner Bock, Pacifico, Stash IPA, Zombie Dragon, Celis White, Big Bend Hefeweizen, Love Street, Fat Tire, Austin Eastcider Blood Orange Cider",
+        "description": "Bud Light, Big Bend Hefe, Stash IPA, Cellis White, Love Street, Zombie Dragon, AE Blood Orange, AE Orginal Dry, Austin Amber, Dos Equis, Zoe, Miller Lite, Pacifico, Peroni, Shiner Bock, Buckethead IPA, Thirsty Goat",
         "register": null
       },
       {
        "name": "Bottle",
-        "description": "Corona, Corona Premier, Michelob Ultra, Budwesier, Bud Light, Coors Light, Angry Orchard, Sam Adams, Firemans 4, Moretti, Stella Artois, Guinness, Heineken",
+        "description": "Coors, Coors Light, Corona Extra, Corona Premier, Guinness, Lone Star, Modelo, Moretti, Stella Artois, Budweiser, Michelob Ultra",
         "register": null
       },
     ]
-  }
+  },
+  {
+    "name": "Hard Seltzer",
+    "description": null,
+    "items": [{
+        "name": "Can",
+        "description": "White Claw Lime, White Claw Black Cherry",
+        "register": null
+      },
+    ]
+  },
+  {
+    "name": "Liquors",
+    "description": null,
+    "items": [{
+        "name": "Vodka",
+        "description": "Absolut, Grey Goose, Deep Eddy, Deep Eddy Lemon, Deep Eddy Ruby Red, Titos, Smirnoff, Dripping Springs, Nikolai",
+        "register": null
+      },
+      {
+       "name": "Gin",
+        "description": "Dripping Springs, Bombay Sapphire, Beefeater, Taaka",
+        "register": null
+      },
+      {
+       "name": "Whiskey & Bourbon",
+        "description": "Jack Daniels, Makers Mark, Jameson, TW Samuels, Garrison Brothers, Texas 1835, Crown Royal, Dewars, Johnnie Walker Red Label, Johnnie Walker Black Label, Bulleit, Old Grand-Dad, Jim Beam, Knob Creek, Fireball, Glenmorangie",
+        "register": null
+      },
+      {
+       "name": "Rum",
+        "description": "Bacardi Superior, Ron Rio, Capt. Morgan, Malibu",
+        "register": null
+      },
+      {
+       "name": "Tequila",
+        "description": "Cuervo Gold, Patron Silver, Herradura Silver, Herradura Anejo, 1800 Reposado, Hornitos Reposado, Espolon Silver, Don Julio Anejo, Don Julio Silver, Juarez Gold, Cazadores",
+        "register": null
+      },
+      {
+       "name": "Brandy",
+        "description": "Hennessy VS",
+        "register": null
+      },
+      {
+       "name": "Cordials",
+        "description": "Dekuyper Triple Sec, Cointreau, Grand Marnier, Kahlua, Disaronno Amaretto, Campari, Aperol, Dekuper Peachtree, Schapps, Romana Sambuca, Paulas Texas Orange, Baileys",
+        "register": null
+      },
+      {
+       "name": "Mixers",
+        "description": "Angostura Bitters, Roses Lime, Cocktail Onions, Spec's Queen Stuffed Olives",
+        "register": null
+      },
+    ]
+  },
+  {
+    "name": "Beverages",
+    "description": null,
+    "items": [{
+        "name": null,
+        "description": "Topo Chico Lime, Topo Chico Grapefruit, Topo Chico, Monster, Monster Low Carb, Coke, Diet Coke, Coke Zero, Mexican Coke, Dr. Pepper, Sprite, Waterloo Mango, Waterloo Watermelon, Waterloo Original, Waterloo Lime, Teas and Fountain Drinks, Coffee, Cappucino",
+        "register": null
+      },
+    ]
+  },
 ]

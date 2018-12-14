@@ -12,14 +12,23 @@
 - Typography
 - Links
 - Buttons
-- Forms
 - Lists
-- Code
-- Tables
-- Spacing
-- Utilities
+- Images
 - Clearing
 - Media Queries
+- Universal Footer
+- Navigation
+- Navigation Open State
+- Navigation Menu Button and Logo on Mobile 
+- Navgiation Menu icon open/close states
+- Navgiation list of site links on Mobile
+- Navgiation dropdown currently being used for Menu and Order Online
+- Hero specifics
+- Home page specifics
+- Menu page specifics
+- Drinks page specifics
+- Our Story specifics
+- Location & Hours specifics
 */
 
 /* Grid
@@ -186,6 +195,59 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1100px; }
+  .one-xl.column,
+  .one-xl.columns                    { width: 4.66666666667%; }
+  .two-xl.columns                    { width: 13.3333333333%; }
+  .three-xl.columns                  { width: 22%;            }
+  .four-xl.columns                   { width: 30.6666666667%; }
+  .five-xl.columns                   { width: 39.3333333333%; }
+  .six-xl.columns                    { width: 48%;            }
+  .seven-xl.columns                  { width: 56.6666666667%; }
+  .eight-xl.columns                  { width: 65.3333333333%; }
+  .nine-xl.columns                   { width: 74.0%;          }
+  .ten-xl.columns                    { width: 82.6666666667%; }
+  .eleven-xl.columns                 { width: 91.3333333333%; }
+  .twelve-xl.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third-xl.column               { width: 30.6666666667%; }
+  .two-thirds-xl.column              { width: 65.3333333333%; }
+
+  .one-half-xl.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one-xl.column,
+  .offset-by-one-xl.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two-xl.column,
+  .offset-by-two-xl.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three-xl.column,
+  .offset-by-three-xl.columns        { margin-left: 26%;            }
+  .offset-by-four-xl.column,
+  .offset-by-four-xl.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five-xl.column,
+  .offset-by-five-xl.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six-xl.column,
+  .offset-by-six-xl.columns          { margin-left: 52%;            }
+  .offset-by-seven-xl.column,
+  .offset-by-seven-xl.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight-xl.column,
+  .offset-by-eight-xl.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine-xl.column,
+  .offset-by-nine-xl.columns         { margin-left: 78.0%;          }
+  .offset-by-ten-xl.column,
+  .offset-by-ten-xl.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven-xl.column,
+  .offset-by-eleven-xl.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third-xl.column,
+  .offset-by-one-third-xl.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds-xl.column,
+  .offset-by-two-thirds-xl.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half-xl.column,
+  .offset-by-one-half-xl.columns     { margin-left: 52%; }
+
+  .column-right-xl { float: right; }
+  .column-left-xl { float: left; }
 }
 /* For devices larger than 1200px */
 @media (min-width: 1400px) {
@@ -423,6 +485,7 @@ input[type="button"].button-secondary:focus {
   color: #fff;
 }
 
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
@@ -441,6 +504,7 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
@@ -458,6 +522,7 @@ img {
   content: "";
   display: table;
   clear: both; }
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -974,21 +1039,25 @@ NOTE: Height and opacity change used to create open/close transition
 /* Home page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home .hero {
-  background-image: url('../assets/12.png');
-  padding: 120px 0 30px 0;
+  background-image: url('../assets/home-hero.jpg');
+  padding: 40px 0 30px 0;
 }
 .home .hero img {
   display: block;
   margin: 24px auto;
   background-position: left;
   width: 192px;
-
+}
+.home .hero h3 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
 }
 .home .main-content .row {
   text-align: center;
 }
 .home .pizza {
-  background-image: url('../assets/9.png');
+  background-image: url('../assets/home-oven.jpg');
   background-size: cover;
   background-position: left center;
   color: white;
@@ -996,7 +1065,7 @@ NOTE: Height and opacity change used to create open/close transition
 }
 @media (min-width: 875px) {
   .home .hero {
-  	padding-top: 160px;
+  	padding: 160px 0 40px 0;
   }
   .hero.oven img {
     height: 240px;
@@ -1007,8 +1076,8 @@ NOTE: Height and opacity change used to create open/close transition
 
 /* Menu page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.menu .hero {
-  background-image: url('../assets/14.png');
+.food .hero {
+  background-image: url('../assets/food-hero.jpg');
 }
 .menu .main-content {
   padding: 40px 0;
@@ -1062,7 +1131,10 @@ NOTE: Height and opacity change used to create open/close transition
   }
 }
 @media (min-width: 875px) {
-	.menu .jumplinks {
+	.menu h2 {
+    margin: 2rem 0 0 0;
+  }
+  .menu .jumplinks {
 		display: block;
 	}
 	.menu .jumplinks ul {
@@ -1088,18 +1160,6 @@ NOTE: Height and opacity change used to create open/close transition
 
 /* Additonal Toppings section on Menu page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.drinks .panel .row h4 {
-  text-align: left;
-  margin-bottom: 0;
-}
-.drinks .panel .row p {
-  margin-top: 12px;
-  font-size: 1.8rem;
-}
-.drinks #Beers .row .four-md {
-  width: 100%;
-  margin-left: 0;
-}
 @media (min-width: 875px) {
   .menu #AdditionalToppings .columns {
     width: 100% !important;
@@ -1225,6 +1285,9 @@ NOTE: Height and opacity change used to create open/close transition
 
 /* Drinks page specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.drinks .hero {
+  background-image: url('../assets/drinks-hero.jpg');
+}
 .drinks .panel .row h4 {
   text-align: left;
   margin-bottom: 0;
@@ -1233,26 +1296,36 @@ NOTE: Height and opacity change used to create open/close transition
   margin-top: 12px;
   font-size: 1.8rem;
 }
-.drinks #Beers .row .four-md {
+.drinks #Beers .row .four-md,
+.drinks #HardSeltzer .row .four-md ,
+.drinks #Liquors .row .four-md,
+.drinks #Beverages .row .four-md  {
   width: 100%;
   margin-left: 0;
 }
 @media (min-width: 875px) {
-  .drinks #Beers .panel .row h4:first-of-type {
+  .drinks #Beers .panel .row h4:first-of-type,
+  .drinks #HardSeltzer .panel .row h4:first-of-type,
+  .drinks #Liquors .panel .row h4:first-of-type {
     float: left;
-    width: 10%;
+    width: 15%;
     margin-top: 0;
   }
-  .drinks #Beers .panel .row h4:last-of-type {
+  .drinks #Beers .panel .row h4:last-of-type,
+  .drinks #HardSeltzer .panel .row h4:last-of-type,
+  .drinks #Liquors .panel .row h4:last-of-type  {
     float: left;
-    width: 90%;
+    width: 85%;
+  }
+  .drinks #Beverages .panel .row h4 {
+    width: 100%;
   }
 }
 
 /* Our Story specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ourstory .hero {
-  background-image: url('../assets/6.png');
+  background-image: url('../assets/ourstory-hero.jpg');
 }
 .ourstory .gray-bg h1 {
   text-align: center;
@@ -1276,7 +1349,7 @@ NOTE: Height and opacity change used to create open/close transition
 /* Location & Hours specifics
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .locationhours .hero {
-	background-image: url('../assets/1.png');
+	background-image: url('../assets/location-hero.jpg');
  	background-position: left center;
 }
 .locationhours .main-content a i {
@@ -1288,8 +1361,8 @@ NOTE: Height and opacity change used to create open/close transition
   height: 24rem;
   margin-top: 2rem;
 }
-.locationhours .row {
-  margin-top: 3.2rem;
+.locationhours h1 {
+  margin-bottom: 3.2rem;
 } 
 .locationhours h5 {
   margin-bottom: .8rem;
